@@ -1,20 +1,21 @@
 #include<stdio.h>
-int main()
+void main()
 {
-int n,i,j,start=0,end=size-1;
-int size=(2*n)-1;
-char *name =  "SIVA";
-int temp=0;
+int n,i,j;
 printf("enter n value");
 scanf("%d",&n);
+int size = (2*n)-1;
+char a[size][size];
+int start=0; int end=size-1;
+int temp=0;
+char *name = "SIVA ANU";
 while(n>0)
 {
 for(i=start;i<=end;i++)
 {
 for( j=start;j<=end;j++)
 {
-if(i==start||i==end||j==start||j==end)
-{
+if(i==start||j==start||i==end||j==end)
 a[i][j]=name[temp];
 }
 }
