@@ -1,4 +1,4 @@
-//coloum sum in array elements//
+\\Write a c program to print Row sum value , where Row number is supplied by the user at run time?\\
 #include<stdio.h>
 void main()
 {
@@ -16,14 +16,13 @@ void main()
 			scanf("%d",&a[i][j]);
 		}
 	}
-	for(i=0;i<r;i++)
+	for(i=0;i<r;i++)	
 	{
 		sum=0;
-		for(j=0;j<c;j++) 
+		for(j=0;j<c;j++)	
 		{
-			sum=sum+a[j][i]	;
+			sum=sum+a[i][j]	;
 		}
-		printf(" %d Col sum= %d \n",i+1,sum);		
+		printf(" %d Row sum= %d \n",i+1,sum);		
 	}
-	
 }
