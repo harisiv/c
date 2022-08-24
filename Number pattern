@@ -1,0 +1,27 @@
+//write a number pattern program//
+//
+6
+65
+654
+6543
+65432
+654321
+//
+
+#include <stdio.h>
+int main()
+{   
+int n,i,j;
+scanf("%d",&n);
+for(i=n;i>=1;i--)
+{
+    for(j=n;j>=i;j--)
+    {
+        printf("%3d",j);
+    }
+printf("\n");
+}
+    return 0;
+}
+
+
