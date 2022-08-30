@@ -1,0 +1,13 @@
+// Read a string and print all character "a" to uppercase and print string. If character "a" is not there in string. Print String //
+#include<stdio.h>
+void main()
+{
+char s[20];
+gets(s);
+for(int i=0;s[i]!='\0';i++)
+{
+if(s[i]=='a')
+s[i]='A';
+}
+printf("%s",s);
+}
