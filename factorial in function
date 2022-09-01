@@ -1,0 +1,17 @@
+// Write a C Program to find FACTORIAL of a number using functions with return value //
+#include<stdio.h>
+void main()
+{
+	int f,n;
+	printf("enter n value\n");
+	scanf("%d",&n);
+	f=fact(n);
+	printf("factorial= %d",f);
+}
+int fact(int x)
+{
+	if(x==0)
+	return(1);
+	else
+	return (x*fact(x-1));
+}
