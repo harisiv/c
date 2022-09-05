@@ -1,0 +1,16 @@
+//  write a program to read n and m values. Print numbers between n and m without using for loop //
+#include<stdio.h>
+void main()
+{
+	int a,s;
+	scanf("%d %d",&a,&s);
+	display(a,s);
+}
+void display(int start,int end)
+{
+	if(start>end)
+	return;
+	else
+	printf("%3d",start);
+	display(start+1,end);
+}
